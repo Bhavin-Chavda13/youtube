@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.button {
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+background-color: #555555;
+border-radius: 8px;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+.icon{
+position:absolute;
+left:18px;
+top:9px;
+font-size:30px;
+}
+
+
+}
+body {
+padding: 25px;
+background-color: white;
+color: black;
+font-size: 25px;
+}
+
+.dark-mode {
+background-color: black;
+color: white;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Toggle Dark/Light Mode</h2>
+<p>Click the button to toggle between dark and light mode for this page.</p>
+
+<button class="button" onclick="myFunction()"><i class="fa fa-moon-o fa-2x" aria-hidden="true"></i>Toggle dark mode</button>
+
+<script>
+function myFunction() {
+var element = document.body;
+element.classList.toggle("dark-mode");
+}
+</script>
+
+</body>
+</html>
